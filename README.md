@@ -39,13 +39,36 @@ You need vision, APIs, and the courage to automate responsibly.
 
 ## ⚙️ Architecture: How It Works
 
-<div align="center">
-  <img src="https://mermaid.ink/svg/pako:eNqVUk1rwjAQ_SvMJtXkQZPj0yKZs9WkqR1sUQK6EloC8nYkSQm39d5EF1BpKvO7M7O7M3a9zfvAwpN8KWIy7g3lIuJ1tS8wJ7wJ0pW7dM2n3Os7nYkL4F8g3lKcHnzO1xgKAd0ibzZ9FQyFQHh9i6E0gtI2K1gR4qiQb8gH3l8n6v9I5vQe3doWn5r9ohM1v8jMQE2ZPOhCQlYtRLkDkZ8a2R7BKjXWgQ2tT0vB5A0qH9p3Rzv6VpD0wCe0jiF9dW5tN5l7x0XJ8zqJXnZtEw9DkqE5nWQqg7vGQAz8nV0blVb0d6YtZ8N-Po9A1Yq2A" alt="Watsonx Orchestrate Weather Agent Architecture" style="max-width:600px;width:100%;">
-  <br>
-  <em>Every step, every tool, every answer — crystal clear and color-coded 🔵🟡🟢.</em>
-</div>
 
-> **From prompt → API calls → human answers, all governed and auditable.**
+The Watsonx Orchestrate Weather Agent follows a robust, auditable flow designed for enterprise-grade transparency and control:
+
+<div align="center">
+
+```
++-----------------+           +----------------------+           +----------------------+
+|     Prompt      |  ----->   |  Orchestrator / LLM  |  ----->   |      API Calls       |
+|  (user intent)  |           | (routing + planning) |           | (services, tools)    |
++-----------------+           +----------------------+           +----------------------+
+         |                               |                                  |
+         |                               |                                  v
+         |                               |                         +---------------------+
+         |                               |                         |   Data Sources      |
+         |                               |                         |  (DBs, SaaS, etc.)  |
+         |                               |                         +---------------------+
+         |                               |                                  |
+         |                               v                                  |
+         |                   +----------------------+                       |
+         |                   |  Audit & Governance  |  <--------------------+
+         |                   |  (policies, logs,    |         Logs of
+         |                   |   approvals, trace)  |         requests/results
+         |                   +----------------------+ 
+         |                               |
+         v                               v
++-----------------+           +----------------------+
+|  Human Answers  |  <----    |  Review UI / Human  |
+| (final output)  |           |  in the loop (opt)  |
++-----------------+           +----------------------+
+```
 
 ---
 
