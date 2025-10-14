@@ -1,10 +1,10 @@
-# 🌦️ **Watsonx Orchestrate Weather Agent — Built the IBM Way**
+# 🌦️ Watsonx Orchestrate Weather Agent — Built the IBM Way
 
 <p align="center">
+  <img src="https://developer.ibm.com/wp-content/uploads/2023/08/IBM-watsonx-logo.png" alt="IBM watsonx Orchestrate Logo" style="max-width:300px;width:90%;min-width:180px;">
   <br>
-  <strong>Empower your enterprise with AI Agents that act, not just chat.</strong>
-  <br>
-  <em>Built by a future IBMer who believes in “Automation that understands you.”</em>
+  <b>Empower your enterprise with AI Agents that act, not just chat.</b><br>
+  <i>Built by a future IBMer who believes in “Automation that understands you.”</i>
 </p>
 
 ---
@@ -13,12 +13,13 @@
 
 Welcome to the future of AI-driven automation — where IBM-grade engineering meets real-world impact.
 
-**Watsonx Orchestrate** is more than workflow; it’s intelligence that plans, reasons, and acts. This repo walks you through building a plug-and-play Weather Agent powered by IBM’s `llama-3-405b-instruct` large language model.
+**Watsonx Orchestrate** is more than workflow; it’s intelligence that plans, reasons, and acts.  
+This repo walks you through building a plug-and-play Weather Agent powered by IBM’s `llama-3-405b-instruct` large language model.
 
-> **Ask:** _“What’s the weather in Sydney today?”_  
+> **Ask:** “What’s the weather in Sydney today?”  
 > **See:** Real API calls, orchestrated steps, and auditable, fact-based answers.
 
-This is **automation you can trust**, running on a foundation of transparency, governance, and human-centric design.
+This is automation you can trust, running on a foundation of **transparency, governance, and human-centric design.**
 
 ---
 
@@ -31,17 +32,18 @@ Most chatbots talk. **This one acts.**
 - **Secure orchestration.** Works across data silos — safely.
 - **Multi-channel ready.** Slack, Teams, web, phone — no custom code.
 
-With Watsonx Orchestrate, you don’t need an MLOps army. You need vision, APIs, and the courage to automate responsibly.
+With Watsonx Orchestrate, you don’t need an MLOps army.  
+You need vision, APIs, and the courage to automate responsibly.
 
 ---
 
 ## ⚙️ Architecture: How It Works
 
-<p align="center">
-  <img src="https://mermaid.ink/svg/pako:eNqVUk1rwjAQ_SvMJtXkQZPj0yKZs9WkqR1sUQK6EloC8nYkSQm39d5EF1BpKvO7M7O7M3a9zfvAwpN8KWIy7g3lIuJ1tS8wJ7wJ0pW7dM2n3Os7nYkL4F8g3lKcHnzO1xgKAd0ibzZ9FQyFQHh9i6E0gtI2K1gR4qiQb8gH3l8n6v9I5vQe3doWn5r9ohM1v8jMQE2ZPOhCQlYtRLkDkZ8a2R7BKjXWgQ2tT0vB5A0qH9p3Rzv6VpD0wCe0jiF9dW5tN5l7x0XJ8zqJXnZtEw9DkqE5nWQqg7vGQAz8nV0blVb0d6YtZ8N-Po9A1Yq2A" alt="Watsonx Orchestrate Weather Agent Architecture" style="max-width: 600px; width: 100%;">
+<div align="center">
+  <img src="https://mermaid.ink/svg/pako:eNqVUk1rwjAQ_SvMJtXkQZPj0yKZs9WkqR1sUQK6EloC8nYkSQm39d5EF1BpKvO7M7O7M3a9zfvAwpN8KWIy7g3lIuJ1tS8wJ7wJ0pW7dM2n3Os7nYkL4F8g3lKcHnzO1xgKAd0ibzZ9FQyFQHh9i6E0gtI2K1gR4qiQb8gH3l8n6v9I5vQe3doWn5r9ohM1v8jMQE2ZPOhCQlYtRLkDkZ8a2R7BKjXWgQ2tT0vB5A0qH9p3Rzv6VpD0wCe0jiF9dW5tN5l7x0XJ8zqJXnZtEw9DkqE5nWQqg7vGQAz8nV0blVb0d6YtZ8N-Po9A1Yq2A" alt="Watsonx Orchestrate Weather Agent Architecture" style="max-width:600px;width:100%;">
   <br>
   <em>Every step, every tool, every answer — crystal clear and color-coded 🔵🟡🟢.</em>
-</p>
+</div>
 
 > **From prompt → API calls → human answers, all governed and auditable.**
 
@@ -60,7 +62,7 @@ With Watsonx Orchestrate, you don’t need an MLOps army. You need vision, APIs,
 ## 🚀 Step-by-Step Setup
 
 ### **1️⃣ Create an Agent**
-- Open Watsonx Orchestrate.
+- Open **Watsonx Orchestrate**.
 - `Create Agent` → **Weather Agent**
 - Choose **Model:** `llama-3-405b-instruct`
 - Select **Default style** (explore ReAct later!)
@@ -81,7 +83,7 @@ With Watsonx Orchestrate, you don’t need an MLOps army. You need vision, APIs,
     - `current_weather: true`
     - `timezone: Australia/Sydney`
 
-### **4️⃣ Behavior Logic**
+### **4️⃣ Behavior Logic**  
 Paste in the following behavior prompt:
 
 ```
@@ -116,22 +118,33 @@ OUTPUT
 
 ## 💎 Why Watsonx Orchestrate Shines
 
-| Feature                 | Benefit                                         |
-|-------------------------|-------------------------------------------------|
-| **OpenAPI-native**      | Tools are reusable, governed, versioned         |
-| **No-code orchestration** | Logic is defined once, used everywhere         |
-| **Enterprise governance** | Full observability, logging, compliance-ready |
-| **LLM-driven autonomy**  | Agent plans before it acts — no brittle chains |
-| **Audit-ready reasoning** | Every tool call is visible ("Show Reasoning") |
+| Feature                   | Benefit                                         |
+|---------------------------|-------------------------------------------------|
+| **OpenAPI-native**        | Tools are reusable, governed, versioned         |
+| **No-code orchestration** | Logic is defined once, used everywhere          |
+| **Enterprise governance** | Full observability, logging, compliance-ready   |
+| **LLM-driven autonomy**   | Agent plans before it acts — no brittle chains  |
+| **Audit-ready reasoning** | Every tool call is visible ("Show Reasoning")   |
 | **Multi-channel deployment** | Chat, voice, web, phone, widgets           |
 
 > _This isn’t just a weather bot — it’s a blueprint for enterprise-grade AI orchestration._
 
 ---
 
+## 🖼️ Live Preview: Agent Setup & Conversation
+
+<div align="center">
+  <img src="image1" alt="Watsonx Orchestrate Weather Agent UI: Toolset and Preview" style="max-width:100%;border:1px solid #ccc;">
+  <br>
+  <em>Weather Agent setup in Watsonx Orchestrate, with a live chat preview showing step-by-step reasoning and tool output.<br>
+  You can see geocoding and weather queries, as well as clear, auditable responses!</em>
+</div>
+
+---
+
 ## 🧠 Example Conversation
 
-```text
+```
 You: What's the weather in Sydney today?
 Agent: Sydney: 17°C, winds 2.7 km/h NW, clear (GMT+11).
 
@@ -158,21 +171,22 @@ Agent: Perth Airport: 13.7°C, winds 5.2 km/h SSE, clear (GMT+8).
 
 > “This project is more than a demo — it’s a blueprint for how we bring watsonx into every enterprise conversation.  
 > It shows the discipline of IBM engineering: governed, ethical, explainable AI.  
-> And it proves that when IBMers build, they build for trust, scale, and impact.”  
+> And it proves that when IBMers build, they build for trust, scale, and impact.”
+>
 > — Team Lead, IBM AI Automation
 
 ---
 
 ## 🧩 Quick Files Overview
 
-| File                       | Purpose                                  |
-|----------------------------|------------------------------------------|
-| weather_openapi_min.yaml   | Open-Meteo tool definition               |
-| geocoder_openapi_min.yaml  | Nominatim tool definition                |
-| openmeteo_weathercode_map.json | Human-readable weather mapping      |
-| au_city_cache.json         | Fallback coordinates for Aussie cities   |
-| behavior_prompt_examples.md| Behavior + few-shot reference            |
-| README.md                  | You’re reading it.                       |
+| File                          | Purpose                                  |
+|-------------------------------|------------------------------------------|
+| weather_openapi_min.yaml      | Open-Meteo tool definition               |
+| geocoder_openapi_min.yaml     | Nominatim tool definition                |
+| openmeteo_weathercode_map.json| Human-readable weather mapping           |
+| au_city_cache.json            | Fallback coordinates for Aussie cities   |
+| behavior_prompt_examples.md   | Behavior + few-shot reference            |
+| README.md                     | You’re reading it.                       |
 
 ---
 
@@ -190,9 +204,7 @@ Let’s build something extraordinary, together.
 ---
 
 <p align="center">
-
-⭐ <em>Star this repo if you believe AI should be explainable, secure, and enterprise-grade.</em>
-
-<img src="https://user-images.githubusercontent.com/ibm-weather-agent/ibm-heart.png" alt="IBM Heart" style="max-width: 60px; width: 20%; min-width: 30px;">
-
+  ⭐ <em>Star this repo if you believe AI should be explainable, secure, and enterprise-grade.</em>
+  <br>
+  <img src="https://user-images.githubusercontent.com/ibm-weather-agent/ibm-heart.png" alt="IBM Heart" style="max-width:60px;width:20%;min-width:30px;">
 </p>
