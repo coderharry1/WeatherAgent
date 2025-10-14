@@ -5,6 +5,8 @@
   <br>
   <b>Empower your enterprise with AI Agents that act, not just chat.</b><br>
   <i>Built by a future IBMer who believes in “Automation that understands you.”</i>
+  <br><br>
+  <a href="https://dl.watson-orchestrate.ibm.com/build/agent/edit/e61705eb-c92b-42e8-b61c-0219af05eb9e"><strong>🚀 Launch in watsonx Orchestrate</strong></a>
 </p>
 
 ---
@@ -14,7 +16,7 @@
 Welcome to the future of AI-driven automation — where IBM-grade engineering meets real-world impact.
 
 **Watsonx Orchestrate** is more than workflow; it’s intelligence that plans, reasons, and acts.  
-This repo walks you through building a plug-and-play Weather Agent powered by IBM’s `llama-3-405b-instruct` large language model.
+This repo walks you through building a plug-and-play **Weather Agent** powered by IBM’s `llama-3-405b-instruct` large language model.
 
 > **Ask:** “What’s the weather in Sydney today?”  
 > **See:** Real API calls, orchestrated steps, and auditable, fact-based answers.
@@ -39,20 +41,20 @@ You need vision, APIs, and the courage to automate responsibly.
 
 ## ⚙️ Architecture: How It Works
 
-The Watsonx Orchestrate Weather Agent follows a robust, auditable flow designed for enterprise-grade transparency and control:
+The Weather Agent follows a robust, auditable flow designed for enterprise-grade transparency and control:
 
 <div align="center">
 
 <pre>
 +-----------------+           +----------------------+           +----------------------+
 |     Prompt      |  ----->   |  Orchestrator / LLM  |  ----->   |      API Calls       |
-|  (user intent)  |           | (routing + planning) |           | (services, tools)    |
+|  (user intent)  |           | (routing + planning) |           | (geocoder, weather)  |
 +-----------------+           +----------------------+           +----------------------+
          |                               |                                  |
          |                               |                                  v
          |                               |                         +---------------------+
          |                               |                         |   Data Sources      |
-         |                               |                         |  (DBs, SaaS, etc.)  |
+         |                               |                         |  (public + internal)|
          |                               |                         +---------------------+
          |                               |                                  |
          |                               v                                  |
@@ -70,12 +72,6 @@ The Watsonx Orchestrate Weather Agent follows a robust, auditable flow designed 
 </pre>
 </div>
 
-**Legend:**
-- Every step emits structured logs into **Audit & Governance** for traceability.
-- A **Human-in-the-Loop** can approve or edit before the final answer.
-
----
-
 This architecture ensures:
 - **Full traceability** — every API call and LLM decision is logged.
 - **Enterprise auditability** — all actions are governed and reviewable.
@@ -85,11 +81,12 @@ This architecture ensures:
 
 ## 🖼️ Live Preview: Agent Setup & Conversation
 
+> Place a screenshot named **`./agent-ui.png`** in this folder to render the image below.
+
 <p align="center">
-  <img src="image1" alt="Watsonx Orchestrate Weather Agent UI: Toolset and Preview" style="max-width:100%;border:1px solid #ccc;">
+  <img src="./agent-ui.png" alt="Watsonx Orchestrate Weather Agent UI: Toolset and Preview" style="max-width:100%;border:1px solid #ccc;">
   <br>
-  <em>Weather Agent setup in Watsonx Orchestrate, with a live chat preview showing step-by-step reasoning and tool output.<br>
-  You can see geocoding and weather queries, as well as clear, auditable responses!</em>
+  <em>Weather Agent setup in Watsonx Orchestrate, with a live chat preview showing step-by-step reasoning and tool output.</em>
 </p>
 
 ---
