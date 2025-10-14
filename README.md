@@ -1,7 +1,7 @@
 # 🌦️ Watsonx Orchestrate Weather Agent — Built the IBM Way
 
 <p align="center">
-  <img src="./image2.png" alt="watsonx orchestrate logo" width="320px" style="border-radius:12px;">
+  <img src="./watsonx-logo.png" alt="watsonx orchestrate logo" width="320" style="border-radius:12px;">
   <br>
   <b>Empower your enterprise with AI Agents that act, not just chat.</b><br>
   <i>Built by a future IBMer who believes in “Automation that understands you.”</i>
